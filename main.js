@@ -8,6 +8,14 @@ let vitas = new Vitas(categoryStorer, downloadListener);
 
 vitas.start();
 
+let c = new Category(generateId(idLength), 'foo', null);
+let b = new Category(generateId(idLength), 'bar', null);
+// categoryStorer.store(c).then(() => console.log(c));
+// categoryStorer.store(b).then(() => console.log(b));
+
+// categoryStorer.removeAllCategories().then(() => console.log('done'));
+
+categoryStorer.getAllCategories().then(categories => console.log(categories));
 
 function generateId(length) {
 
