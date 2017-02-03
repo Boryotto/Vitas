@@ -8,6 +8,7 @@ let vitas = new Vitas(categoryStorer, downloadListener);
 
 vitas.start();
 
+
 function generateId(length) {
 
     let maxId = 0;
