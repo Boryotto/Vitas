@@ -10,6 +10,7 @@
         "scripts": [
             "util/id.js",
             "common/common.js",
+            "ui/popup-agent.js",
             "storage/storage.js",
             "download/download.js",
             "vitas.js",
