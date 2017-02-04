@@ -8,6 +8,7 @@
     },
     "background": {
         "scripts": [
+            "util/id.js",
             "common/common.js",
             "storage/storage.js",
             "download/download.js",

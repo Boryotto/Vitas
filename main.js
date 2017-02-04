@@ -3,18 +3,8 @@ const categoryRegistryStorageKey = 'categories';
 
 let categoryStorer = new CategoryStorer(categoryRegistryStorageKey);
 let downloadListener = new DownloadListener();
+let idGenerator = new IdGenerator();
 
-let vitas = new Vitas(categoryStorer, downloadListener);
+let vitas = new Vitas(categoryStorer, downloadListener, idGenerator);
 
 vitas.start();
-
-
-function generateId(length) {
-
-    let maxId = 0;
-    for (let i = 0; i < length; i++) {
-        maxId += 9 * Math.pow(10, i);
-    }
-
-    return Math.floor(Math.random() * maxId);
-}
