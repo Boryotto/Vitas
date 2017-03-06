@@ -16,6 +16,10 @@
     "url": "https://github.com/mor747111/Vitas/issues"
   },
   "homepage": "https://github.com/mor747111/Vitas#readme",
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1",
+    "tether": "^1.4.0"
   }
 }

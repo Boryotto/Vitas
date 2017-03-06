@@ -8,7 +8,11 @@
     },
     "background": {
         "scripts": [
+            "config.js",
             "util/id.js",
+            "common/message.js",
+            "common/message-route.js",
+            "common/message-router.js",
             "common/common.js",
             "ui/popup-agent.js",
             "storage/storage.js",
@@ -18,6 +22,29 @@
         ],
         "persistent": false
     },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "css": [
+                "node_modules/tether/dist/css/tether.min.css",
+                "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "js": [
+                "node_modules/jquery/dist/jquery.min.js",
+                "node_modules/tether/dist/js/tether.min.js",
+                "node_modules/bootstrap/dist/js/bootstrap.min.js",
+                "config.js",
+                "common/message.js",
+                "common/message-route.js",
+                "common/message-router.js",
+                "popup/vitas-agent.js",
+                "popup/popup.js",
+                "popup/popup.main.js"
+            ]
+        }
+    ],
     "permissions": [
         "http://*.google.com/",
         "https://*.google.com/",
@@ -28,5 +55,8 @@
         "default_title": "Vitas",
         "default_icon": "res/icon.png",
         "default_popup": "popup.html"
-    }
+    },
+    "web_accessible_resources": [
+        "popup/popup-page/*"
+    ]
 }
