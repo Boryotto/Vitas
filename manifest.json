@@ -29,7 +29,8 @@
             ],
             "css": [
                 "node_modules/tether/dist/css/tether.min.css",
-                "node_modules/bootstrap/dist/css/bootstrap.min.css"
+                "node_modules/bootstrap/dist/css/bootstrap.min.css",
+                "popup/popup-page/popup-style.css"
             ],
             "js": [
                 "node_modules/jquery/dist/jquery.min.js",
@@ -39,6 +40,7 @@
                 "common/message.js",
                 "common/message-route.js",
                 "common/message-router.js",
+                "popup/popup-injector.js",
                 "popup/vitas-agent.js",
                 "popup/popup.js",
                 "popup/popup.main.js"
